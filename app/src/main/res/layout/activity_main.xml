@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điền thông tin bên dưới !"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+     />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên"
+        android:textSize="24dp"
+        android:layout_below="@id/textTitle"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Url hình ảnh"
+        android:textSize="24dp"
+        android:layout_below="@id/name"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả hành tinh"
+        android:textSize="24dp"
+        android:layout_below="@id/url"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Thêm"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/des"
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Sửa"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnInsert"
+        />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Xóa"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnUpdate"
+        />
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Xem dữ liệu"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnDelete"
+        />
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Xem DANH Sách"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnView"
+        />
+</RelativeLayout>

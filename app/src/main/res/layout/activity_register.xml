@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/usernameDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tài khoản"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/passwordDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/usernameDangKi"/>
+
+    <EditText
+        android:id="@+id/repasswordDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lại mật khẩu"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/passwordDangKi"/>
+
+    <Button
+        android:id="@+id/btnsignupDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng kí"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/repasswordDangKi"/>
+
+    <Button
+        android:id="@+id/btnsigninDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sang bên Đăng nhập "
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnsignupDangKi"/>
+
+</RelativeLayout>
